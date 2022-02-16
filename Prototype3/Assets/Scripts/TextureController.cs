@@ -36,4 +36,25 @@ public class TextureController
         return t;
 
     }
+    public static Types[,] generateTerrainMap(float[,] noiseMap, Types[] t)
+    {
+        int newSize = noiseMap.GetLength(0);
+        Types[,] output = new Types[newSize, newSize];
+
+        for (int i = 0; i < newSize; i++)
+        {
+            for (int j = 0; j < newSize; j++)
+            {
+                for (int k = 0; k < t.Length; k++)
+                {
+                    if (noiseMap[i, j] < t[k].threshold)
+                    {
+                        output[i, j] = t[k];
+                        break;
+                    }
+                }
+            }
+        }
+        return output;
+    }
 }

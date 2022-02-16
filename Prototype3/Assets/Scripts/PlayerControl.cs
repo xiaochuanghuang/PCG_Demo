@@ -29,6 +29,7 @@ public class PlayerControl : MonoBehaviour
     
         if(Input.GetKey(KeyCode.Space))
         {
+         
             gameObject.GetComponent<Rigidbody>().useGravity = false;
             gameObject.transform.Translate(new Vector3(0.0f, 5, 0.0f) * speed * Time.deltaTime);
         }

@@ -100,18 +100,18 @@ MonoBehaviour:
   - seed: 7500
     frequency: 0.3
     amplitude: 1
-  heightTerrain:
-  - threshold: 0.25
+  waterTerrain:
+    threshold: 0.2
     color:
       serializedVersion: 2
       key0: {r: 0.12156863, g: 0.40784314, b: 0.54901963, a: 1}
       key1: {r: 0.18431373, g: 0.85882354, b: 1, a: 1}
-      key2: {r: 0.9019608, g: 0.17254902, b: 0.34509805, a: 0.5764706}
-      key3: {r: 0.9019608, g: 0.17254902, b: 0.34509805, a: 0.5764706}
-      key4: {r: 0.9019608, g: 0.17254902, b: 0.34509805, a: 0.5764706}
-      key5: {r: 0.9019608, g: 0.17254902, b: 0.34509805, a: 0.5764706}
-      key6: {r: 0.9019608, g: 0.17254902, b: 0.34509805, a: 0.5764706}
-      key7: {r: 0.9019608, g: 0.17254902, b: 0.34509805, a: 0.5764706}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
       ctime0: 0
       ctime1: 65535
       ctime2: 0
@@ -132,22 +132,24 @@ MonoBehaviour:
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     objects:
-    - {fileID: 100044, guid: b145870054d5de24da06da86bcb3cba2, type: 3}
-    density: 0
-  - threshold: 0.28
+    - {fileID: 1608063991038701062, guid: 1258716e1668da74991ea1ba64042a9b, type: 3}
+    - {fileID: 2065116470626723834, guid: 96745cf3e4b67b84e8109b501c16806c, type: 3}
+    density: 0.08
+  grassTerrain:
+    threshold: 0.5
     color:
       serializedVersion: 2
       key0: {r: 0.18431373, g: 0.85490197, b: 0.99607843, a: 1}
       key1: {r: 0.99215686, g: 0.73333335, b: 0, a: 1}
-      key2: {r: 0.99215686, g: 0.73333335, b: 0, a: 0.5764706}
-      key3: {r: 0, g: 0.8392157, b: 0.03137255, a: 0.5764706}
-      key4: {r: 0.9019608, g: 0.17254902, b: 0.34509805, a: 0.5764706}
-      key5: {r: 0.9019608, g: 0.17254902, b: 0.34509805, a: 0.5764706}
-      key6: {r: 0.9019608, g: 0.17254902, b: 0.34509805, a: 0.5764706}
-      key7: {r: 0.9019608, g: 0.17254902, b: 0.34509805, a: 0.5764706}
+      key2: {r: 1, g: 0.7372549, b: 0, a: 0}
+      key3: {r: 0, g: 0.8392157, b: 0.03137255, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
       ctime0: 0
       ctime1: 12124
-      ctime2: 49413
+      ctime2: 46260
       ctime3: 65535
       ctime4: 0
       ctime5: 0
@@ -164,23 +166,26 @@ MonoBehaviour:
       m_Mode: 0
       m_NumColorKeys: 4
       m_NumAlphaKeys: 2
-    objects: []
-    density: 0
-  - threshold: 0.8
+    objects:
+    - {fileID: 564182390654431059, guid: 42f9f04fab4d9f949ad02b4c776204bb, type: 3}
+    - {fileID: 2581108065139430804, guid: f842f47c699f66f448f17537cb168ae0, type: 3}
+    density: 0.01
+  dirtTerrain:
+    threshold: 0.7
     color:
       serializedVersion: 2
       key0: {r: 0.047058824, g: 0.8352941, b: 0.03137255, a: 1}
       key1: {r: 0.03137255, g: 0.5294118, b: 0.023529412, a: 1}
-      key2: {r: 0.67058825, g: 0.37254903, b: 0.078431375, a: 0.5764706}
-      key3: {r: 0.9019608, g: 0.17254902, b: 0.34509805, a: 0.5764706}
-      key4: {r: 0.9019608, g: 0.17254902, b: 0.34509805, a: 0.5764706}
-      key5: {r: 0.9019608, g: 0.17254902, b: 0.34509805, a: 0.5764706}
-      key6: {r: 0.9019608, g: 0.17254902, b: 0.34509805, a: 0.5764706}
-      key7: {r: 0.9019608, g: 0.17254902, b: 0.34509805, a: 0.5764706}
+      key2: {r: 0.67058825, g: 0.37254903, b: 0.078431375, a: 0}
+      key3: {r: 1, g: 1, b: 1, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
       ctime0: 0
-      ctime1: 24117
+      ctime1: 24094
       ctime2: 65535
-      ctime3: 0
+      ctime3: 65535
       ctime4: 0
       ctime5: 0
       ctime6: 0
@@ -196,21 +201,24 @@ MonoBehaviour:
       m_Mode: 0
       m_NumColorKeys: 3
       m_NumAlphaKeys: 2
-    objects: []
-    density: 0
-  - threshold: 1
+    objects:
+    - {fileID: 2470637477626543144, guid: 2f6e60c8667b05642b425d9ff8d3de3c, type: 3}
+    - {fileID: 6637250119762870974, guid: df369507d8125904190d9c94e08592cb, type: 3}
+    density: 0.01
+  snowTerrain:
+    threshold: 0.9
     color:
       serializedVersion: 2
       key0: {r: 0.6627451, g: 0.37254903, b: 0.078431375, a: 1}
       key1: {r: 1, g: 1, b: 1, a: 1}
-      key2: {r: 1, g: 1, b: 1, a: 0.5764706}
-      key3: {r: 0.9019608, g: 0.17254902, b: 0.34509805, a: 0.5764706}
-      key4: {r: 0.9019608, g: 0.17254902, b: 0.34509805, a: 0.5764706}
-      key5: {r: 0.9019608, g: 0.17254902, b: 0.34509805, a: 0.5764706}
-      key6: {r: 0.9019608, g: 0.17254902, b: 0.34509805, a: 0.5764706}
-      key7: {r: 0.9019608, g: 0.17254902, b: 0.34509805, a: 0.5764706}
+      key2: {r: 1, g: 1, b: 1, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
       ctime0: 0
-      ctime1: 12124
+      ctime1: 37779
       ctime2: 65535
       ctime3: 0
       ctime4: 0
@@ -228,5 +236,7 @@ MonoBehaviour:
       m_Mode: 0
       m_NumColorKeys: 3
       m_NumAlphaKeys: 2
-    objects: []
-    density: 0
+    objects:
+    - {fileID: 1839550270303368510, guid: b4802bbdbdc81204fb949e356530e13a, type: 3}
+    - {fileID: 928078940558799584, guid: 2848a84e48b8e9f4599ac8c6d1ec613a, type: 3}
+    density: 0.01

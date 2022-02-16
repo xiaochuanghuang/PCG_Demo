@@ -7,16 +7,12 @@ public class NewMeshGenerator : MonoBehaviour
     // The material of the plane
     public Material material;
 
-    // The Size of the plane X axis
+    // The Size of the plane X and Z axis
     public float x;
-
-    // The Size of the plane z axis
     public float z;
 
     // The Number of the x subdivisions for the x axis
     public int xBranches;
-
-    // The Number of the z subdivisions for the z axis
     public int zBranches;
 
     // The mesh renderer

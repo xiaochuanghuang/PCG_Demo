@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
+
 public class ObjectGenerator : MonoBehaviour
 {
     public float offsetForObj;
@@ -12,6 +15,7 @@ public class ObjectGenerator : MonoBehaviour
         instance = this;
     }
 
+    // object generates
     public void spawnObject(heightTypes[,] data)
     {
 
@@ -20,7 +24,8 @@ public class ObjectGenerator : MonoBehaviour
         {
             for (int j = 0; j < size; j++)
             {
-               
+                if (data[i, j].typeObj.threshold < 0.3f)
+                {
                     float density = data[i, j].typeObj.density;
 
                     if (density > 1.0f)
@@ -39,7 +44,72 @@ public class ObjectGenerator : MonoBehaviour
                             generateTree(data[i, j].pos, data[i, j].typeObj.objects);
                         }
                     }
-                
+                }
+
+                if ( 0.3f <= data[i, j].typeObj.threshold && data[i, j].typeObj.threshold < 0.6f)
+                {
+                    float density = data[i, j].typeObj.density;
+
+                    if (density > 1.0f)
+                    {
+                        generateTree(data[i, j].pos, data[i, j].typeObj.objects);
+                        float extraTree = Mathf.RoundToInt(Random.Range(1.0f, density));
+                        for (int k = 0; k < extraTree; k++)
+                        {
+                            generateTree(data[i, j].pos, data[i, j].typeObj.objects);
+                        }
+                    }
+                    else
+                    {
+                        if (Random.Range(0.0f, 1.0f) < density)
+                        {
+                            generateTree(data[i, j].pos, data[i, j].typeObj.objects);
+                        }
+                    }
+                }
+
+                if (0.6f <= data[i, j].typeObj.threshold && data[i, j].typeObj.threshold < 0.8f)
+                {
+                    float density = data[i, j].typeObj.density;
+
+                    if (density > 1.0f)
+                    {
+                        generateTree(data[i, j].pos, data[i, j].typeObj.objects);
+                        float extraTree = Mathf.RoundToInt(Random.Range(1.0f, density));
+                        for (int k = 0; k < extraTree; k++)
+                        {
+                            generateTree(data[i, j].pos, data[i, j].typeObj.objects);
+                        }
+                    }
+                    else
+                    {
+                        if (Random.Range(0.0f, 1.0f) < density)
+                        {
+                            generateTree(data[i, j].pos, data[i, j].typeObj.objects);
+                        }
+                    }
+                }
+                else
+                {
+                    float density = data[i, j].typeObj.density;
+
+                    if (density > 1.0f)
+                    {
+                        generateTree(data[i, j].pos, data[i, j].typeObj.objects);
+                        float extraTree = Mathf.RoundToInt(Random.Range(1.0f, density));
+                        for (int k = 0; k < extraTree; k++)
+                        {
+                            generateTree(data[i, j].pos, data[i, j].typeObj.objects);
+                        }
+                    }
+                    else
+                    {
+                        if (Random.Range(0.0f, 1.0f) < density)
+                        {
+                            generateTree(data[i, j].pos, data[i, j].typeObj.objects);
+                        }
+                    }
+                }
             }
         }
     }
