@@ -11,6 +11,9 @@ TextureController class is used to build the texture in the maps
 TileGenerator class is used generated noise map to the plane, and then set up the different types of the area and terrain into the map, also set up the color
 wave, seed... by the user.
 
+For How am I using Flyweight pattern, I divide those terrain into couple different classes, then call them int tile spawn class, 
+That's mean every terrain type is a class. These classes are individual and the only one, so when other class want to use them,
+they have to call by reference.
 
 No, I don't use flyweight pattern elsewhere, because I used unity for my engine, so Unity has prefab
 
